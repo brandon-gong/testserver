@@ -180,11 +180,11 @@
       function closeBanner() {
         $("#blmbanner").css({display: "none"});
         document.getElementById("nbar").style.top = "0px";
-        localStorage.setItem("lo", Date.now());
+        sessionStorage.setItem("lo", "true");
       }
       $( document ).ready(function() {
-        let lastopened = localStorage.getItem("lo");
-        if(lastopened && Date.now() - parseInt(lastopened) < 8.64e+7) {
+        let lastopened = sessionStorage.getItem("lo");
+        if(lastopened) {
           $("#blmbanner").css({display: "none"});
         } else {
           $("#blmbanner").css({display: "flex"});
@@ -193,8 +193,8 @@
       });
 
       $( window ).resize(function() {
-        let lastopened = localStorage.getItem("lo");
-        if(lastopened && Date.now() - parseInt(lastopened) < 8.64e+7) {
+        let lastopened = sessionStorage.getItem("lo");
+        if(lastopened) {
           $("#blmbanner").css({display: "none"});
         } else {
           $("#blmbanner").css({display: "flex"});
