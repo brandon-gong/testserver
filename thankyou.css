@@ -128,3 +128,22 @@ body {
 	padding-top: 1px;
 	padding-bottom: 1px;
 }
+
+#footer {
+	position: relative;
+	clear:both;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding: 8px;
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	margin: -40px;
+	margin-top: 40px;
+  }
+  
+  #footer a {
+	  text-decoration: underline;
+	  color: white;
+  }

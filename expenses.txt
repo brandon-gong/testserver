@@ -1,0 +1,16 @@
+
+901PPE
+Expenses Report
+
+In total, 901PPE raised $1570.00.
+However, GoFundMe deducts 2.9% plus $0.30 per donation (of which
+we had 98).  This left us with a total of
+
+1570.00 * (1 - 0.029) - (0.30 * 98) = $1495.07 in withdrawable funds.
+
+Masks were sourced from three different suppliers.
+
+Shipment 1: 300      surgical masks @ $0.54/mask = $162.00
+Shipment 2: 2000 non-surgical masks @ $0.60/mask = $1200.00
+Shipment 3: 200  non-surgical masks @ $0.60/mask = $120.00
+

@@ -193,3 +193,38 @@ h1 {
   border-radius: 50%;
   margin: 10px;
 }
+
+.card-deck a {
+  color: black;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.card-deck a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.card-title {
+  font-family: "PT Mono";
+  color: "black";
+  font-size: 28px;
+}
+
+#footer {
+	position: relative;
+	clear:both;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding: 8px;
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+  }
+  
+  #footer a {
+	  text-decoration: underline;
+	  color: white;
+  }
