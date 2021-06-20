@@ -293,7 +293,12 @@ body {
 	position: relative;
 }
 
-@keyframes scr {
+@-webkit-keyframes scr {
+	0% {transform: translate3d(0, 0, 0);}
+	100% {transform: translate3d(-100%, 0, 0);}
+}
+
+@-webkit-keyframes scr {
 	0% {transform: translate3d(0, 0, 0);}
 	100% {transform: translate3d(-100%, 0, 0);}
 }
@@ -308,9 +313,13 @@ body {
 	position: absolute;
 	top: -90px;
 	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
 	animation-name: scr;
+	-webkit-animation-name: scr;
 	animation-duration: 600s;
+	-webkit-animation-duration: 600s;
 }
 
 #escroll-inner-1 > a {
