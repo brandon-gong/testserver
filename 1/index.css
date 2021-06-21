@@ -280,6 +280,17 @@ body {
 	flex-grow: 1;
 	overflow: hidden;
 	position: relative;
+	font-family: "Source Serif Pro", serif;
+	font-style: italic;
+	font-size: 90px;
+	font-weight: 600;
+	color: var(--primary-color);
+	-webkit-text-fill-color: transparent;
+  background-clip: text;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: var(--primary-color);
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
 }
 
 @keyframes scr {
@@ -311,7 +322,11 @@ body {
 	-webkit-animation-duration: 600s;
 }
 
-#escroll-inner-1 > a, #escroll-inner-1 > a:visited, #escroll-inner-1 > a:hover {
+#escroll-inner-1 > a {
+	text-decoration: none;
+}
+
+#escroll-inner-1 > a:visited {
 	text-decoration: none;
 	font-family: "Source Serif Pro", serif;
 	font-style: italic;
