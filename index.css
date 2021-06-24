@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ff8080;
+  --primary-color: #b76e79;
 }
 
 * {
@@ -24,7 +24,6 @@ body {
 	flex-direction: column;
 	width: 100%;
 	min-height: calc(100vh - 45px);
-	height: 5000px; /*commentable*/
 	border-color: var(--primary-color);
 	border-width: 2px 2px 0px 2px;
 	border-style: solid;
@@ -128,9 +127,17 @@ body {
 
 #two-2 {
 	flex-grow: 1;
-	background-image: url("161651.svg");
-	background-size: cover;
-	background-position: top;
+	overflow: hidden;
+	height: calc(100vh - 250px);
+}
+#plant {
+	height: 130%;
+	width: 120%;
+	fill: var(--primary-color);
+}
+
+#plant path {
+	fill: var(--primary-color);
 }
 
 .three {
@@ -313,7 +320,7 @@ body {
 	-webkit-animation-duration: 600s;
 }
 
-#escroll-inner-1 > a, #escroll-inner-1 > a:visited, #escroll-inner-1 > a:hover {
+#escroll-inner-1 > a, #escroll-inner-1 > a:visited {
 	text-decoration: none;
 	font-family: "Source Serif Pro", serif;
 	font-style: italic;
@@ -324,6 +331,12 @@ body {
   background-clip: text;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: var(--primary-color);
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+}
+
+#escroll-inner-1 > a:hover {
+	-webkit-text-fill-color: var(--primary-color);
 	transition: all .3s ease-out;
 	-webkit-transition: all .3s ease-out;
 }
@@ -342,4 +355,106 @@ body {
 	user-select: none;
 	color: var(--primary-color);
 	font-size: 30px;
+}
+
+.year-group {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.year-group .row:last-child {
+	border-width: 0px;
+}
+
+.workcell {
+	width: 50%;
+	position: relative;
+}
+
+.workcell-cover { 
+	width: 100%;
+	height: 100%;
+	padding: 100px 40px;
+}
+
+.workcell-cover > h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 70px;
+	color: var(--primary-color);
+	margin: 0; padding: 0;
+}
+.workcell-cover > h2 {
+	font-family: "Source Serif Pro", serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 25px;
+	color: var(--primary-color);
+	margin: 0; padding: 0;
+}
+
+.year {
+	width:300px;
+	position: relative;
+}
+.year-text {
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	position: absolute;
+	left: -42px;
+	font-family: 'Source Serif Pro';
+	font-weight: 900;
+	font-style: italic;
+	font-size: 150px;
+	margin: 0;
+	padding:0;
+	color: var(--primary-color);
+	-webkit-text-fill-color: transparent;
+  background-clip: text;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: var(--primary-color);
+}
+
+#last-1 {
+	flex-grow: 1;
+	overflow: hidden;
+	height: 500px;
+}
+#plant2 {
+	height: 130%;
+	width: 120%;
+	fill: var(--primary-color);
+}
+
+#plant2 path {
+	fill: var(--primary-color);
+}
+
+#bottom-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header-block-text2 {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	font-size: 30px;
+	padding: 0px 20px;
+	font-weight: 400;
+	user-select: none;
+}
+
+#bottom-1 > a{
+	font-family: "Montserrat", sans-serif;
+	font-size: 50px;
+	padding: 0px 15px;
+	margin: 0;
+	color: var(--primary-color);
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 400;
+	user-select: none;
 }
