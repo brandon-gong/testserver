@@ -273,12 +273,20 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
                         <h1>cv-rubiks</h1>
                         <h2>Python • OpenCV • kociemba</h2>
                      </div>
+                     <div class="workcell-extra">
+                        <p>Read the state of a scrambled Rubik's cube in through a webcam and draw arrows indicating the next optimal turn onto the cube in real time.</p>
+                        <p><a href="https://github.com/brandon-gong/opencv-experiments/tree/main/rubiks" target="_blank" rel="noopener noreferrer">view source on github</a></p>
+                     </div>
                   </div>
                   <div class="divider"></div>
                   <div class="workcell">
                      <div class="workcell-cover">
                         <h1>transcriber</h1>
                         <h2>[in progress] C++ • FFTW • libsoundio</h2>
+                     </div>
+                     <div class="workcell-extra">
+                        <p>Identify notes played on a piano from a recording and transcribe the recording into sheet music readable by human musicians.</p>
+                        <p><a href="https://github.com/brandon-gong/transcriber" target="_blank" rel="noopener noreferrer">view source on github</a></p>
                      </div>
                   </div>
                </div>
@@ -308,12 +316,20 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
                         <h1>Personal site</h1>
                         <h2>HTML • Vanilla CSS • JS</h2>
                      </div>
+                     <div class="workcell-extra">
+                        <p>My personal portfolio and info page, written in simple, plain HTML, CSS, and JavaScript.</p>
+                        <p><a href="https://github.com/brandon-gong/brandon-gong.github.io" target="_blank" rel="noopener noreferrer">view source on github</a></p>
+                     </div>
                   </div>
                   <div class="divider"></div>
                   <div class="workcell">
                      <div class="workcell-cover">
                         <h1>Math Bowl</h1>
                         <h2>Web Languages • Firebase Realtime DB</h2>
+                     </div>
+                     <div class="workcell-extra">
+                        <p>Knowledge Bowl-esque tournament manager handling live score updates, disputes, rank calculations, and scheduling.</p>
+                        <p><a href="https://github.com/brandon-gong/chs-math-bowl" target="_blank" rel="noopener noreferrer">view source on github</a></p>
                      </div>
                   </div>
                </div>
@@ -322,6 +338,10 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
                      <div class="workcell-cover">
                         <h1>sketches</h1>
                         <h2>Java Processing • p5.js • nannou</h2>
+                     </div>
+                     <div class="workcell-extra">
+                        <p>Creative code sketches experimenting with color, flow fields, Perlin rings, cellular automata, geometry, and iteration.</p>
+                        <p><a href="https://github.com/brandon-gong/processing-sketches" target="_blank" rel="noopener noreferrer">view source on github</a></p>
                      </div>
                   </div>
                   <div class="divider"></div>
@@ -342,6 +362,10 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
                      <div class="workcell-cover">
                         <h1>CRIS</h1>
                         <h2>JSX • React Native • Cloud Vision API</h2>
+                     </div>
+                     <div class="workcell-extra">
+                        <p>Recognize and provide advice for disposing of compostable and non-compostable food scraps and waste in an environmentally-friendly manner.</p>
+                        <p><a href="https://github.com/brandon-gong/CAC2019" target="_blank" rel="noopener noreferrer">view source on github</a></p>
                      </div>
                   </div>
                   <div class="divider"></div>
@@ -561,7 +585,9 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
             </div>
             <div class="divider"></div>
             <div id="last-2">
-               asdf
+               <p>Thanks for visiting! ٩(◕‿◕｡)۶</p>
+               <p><a href="https://github.com/brandon-gong"  target="_blank" rel="noopener noreferrer">github</a> • <a href="https://www.instagram.com/brandongong_"  target="_blank" rel="noopener noreferrer">instagram</a> • <a href="https://www.linkedin.com/in/brandon-gong-9408b1203"  target="_blank" rel="noopener noreferrer">linkedin</a></p>
+               <p><a onclick="toTop()">back to top</a></p>
             </div>
          </div>
          <div class="row" style="margin-bottom:25px;border-bottom: none;">
@@ -581,18 +607,14 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
 				if (window.scrollY > (document.getElementById("transition-color-1").offsetTop + document.getElementById("transition-color-1").offsetHeight / 2) && window.scrollY < (document.getElementById("seven-1").offsetTop + document.getElementById("seven-1").offsetHeight / 2) && colorstate != 1) {
 					root.style.setProperty("--primary-color", "#6993b5");
 					colorstate = 1;
-               console.log("here1");
 				} else if (window.scrollY < (document.getElementById("transition-color-1").offsetTop + document.getElementById("transition-color-1").offsetHeight / 2) && colorstate != 0) {
 					root.style.setProperty("--primary-color", "#b76e79");
 					colorstate = 0;
-               console.log("here0");
 				} else if (window.scrollY > (document.getElementById("seven-1").offsetTop + document.getElementById("seven-1").offsetHeight / 2) && (window.scrollY < document.getElementById("last-break").offsetTop) && colorstate != 3) {
 					root.style.setProperty("--primary-color", "#42875f");
-               console.log("here3");
 					colorstate = 3;
 				} else if (window.scrollY > document.getElementById("last-break").offsetTop && colorstate != 4) {
                root.style.setProperty("--primary-color", "#c79a20");
-               console.log('here4');
                colorstate = 4;
             }
 			});
@@ -612,6 +634,14 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
 					behavior: 'smooth' 
 				});
 			}
+         function toTop() {
+            window.scroll({
+					top: 0, 
+					left: 0,
+					behavior: 'smooth' 
+				});
+         }
+
 		</script>
 	</body>
 </html>
