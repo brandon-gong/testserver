@@ -419,7 +419,7 @@ body {
 	text-decoration: none;
 }
 
-.workcell:hover > .workcell-extra {
+.workcell:hover > .workcell-extra, .workcell:active > .workcell-extra, .workcell:focus > .workcell-extra {
 	opacity: 100%;
 	pointer-events: unset;
 }
