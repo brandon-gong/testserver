@@ -434,6 +434,7 @@ body {
 .year {
 	width:300px;
 	position: relative;
+	flex-shrink: 0;
 }
 .year-text {
 	writing-mode: vertical-rl;
@@ -636,5 +637,26 @@ body {
 
 	.workcell-extra{
 		padding: 30px;
+	}
+}
+
+@media (hover: none) {
+	.workcell {
+		display: flex;
+		flex-direction: column;
+	}
+	.workcell-extra {
+		position: unset;
+		opacity: 100%;
+		background-color: transparent;
+		padding: 40px;
+		padding-top: 0px;
+	}
+	.workcell-cover {
+		padding: 40px;
+	}
+
+	.workcell-extra p, .workcell-extra a, .workcell-extra a:visited {
+		color: var(--primary-color);
 	}
 }
